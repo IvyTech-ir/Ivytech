@@ -27,34 +27,53 @@
     <li>Easy to Develop
         <ul>
             <li>
-                Base Standard React Architecht <em> so every newbie can onboard easy and fast</em>
+                Based on Standard React Architecht <br><em> so every newbie can onboard easy and fast</em>
+                <ul>
+                    <li>
+                        The official Redux+TS template for <a href="https://github.com/facebook/create-react-app" >Create React App </a>
+                    </li>
+                </ul>
             </li>
             <li>
-                ability plug in everything from the internet world<em> as an  encapsulated module to avoid complexity</em>
+                Encapsulated Thirdparties  <br><em>ability plug in everything from the internet's world as an encapsulated module to avoid complexity</em>
+                 <ul>
+                    <li>
+                        Design Systems (Bootstrap,...)
+                    </li>
+                    <li>
+                        Performance Monitoring (Newrelic, webvitals, ...)
+                    </li>
+                     <li>
+                        Customised Components (Our Internal Design System)<br><em>the less complexity the less dependency to developers</em>
+                    </li>
+                </ul>
             </li>
             <li>
-                the less complexity the less dependency to developers
+                United syntax and structure (Sonar Cloud, Prettier)
             </li>
-            <li>
-                united syntax and structure (using prettier)
-            </li>
-            <li>Modularity <em>to easily add members to team</em></li>
+            <li>Modularity <em>to easily grow the team</em></li>
         </ul>
     </li>
-    <li>Easy to test
+    <li>Easy to Automatic test
         <ul>
             <li>
-                End 2 End test (pupeeteer)
+                End 2 End tests (Pupeeteer)
             </li>
             <li>
-                Automatic Unit tests (Jest)
+                Unit tests (Jest)
+            </li>
+            <li>
+                Code Coverage Control (using Jest)
+            </li>
+            <li>
+                Snapshot Control (using Jest)
             </li>
         </ul>
     </li>
-    <li>Easy to maintenace
+    <li>Easy to Maintenace
         <ul>
             <li>
-                powerfull monitoring (newrelic)
+                User Journey Monitoring (Newrelic, Hotjar)
             </li>
             <li>
                 Unexpected Error Handling (newRelic)
@@ -64,20 +83,20 @@
     <li>Best Possible Performanc
         <ul>
             <li>
-                avoid react bottle nech (rendering componets)
+                Avoid react bottle nechs, e.g rendering componets (Latest React Design Patterns, e.g Hooks)
             </li>
             <li>
-                using latest best practices in react (hooks)
+                SEO Awarness (e.g Next.js)
             </li>
         </ul>
     </li>
     <li>UX 
         <ul>
             <li>
-                track user behaviour (using webtrekk)
+                Track user behaviour (Hotjar)
             </li>
             <li>
-                design first (Figma)
+                United Design System (Figma)
             </li>
         </ul>
     </li>
@@ -90,16 +109,16 @@
         Easy to understand (Structure Map) <em>helps to assosiate the UI to the Source</em>
     </li>
     <li>
-        meaningfull naming according to convesion
+        Meaningfull naming according to concepts in projects
     </li>
     <li>
-        Modularity <em>to best maintenance of third party modules</em>
+        Modularity <em>to best maintenance of each concept and third party modules</em>
     </li>
     <li>
-        Integrity  <em>make everything in one place to easy deployment </em>
+        Integrity  <em>make everything in one place to easy access </em>
     </li>
     <li>
-        Thirdparty Wrappers <em>to avoid breakdown</em>
+        Thirdparty Wrappers <em>to avoid breakdown and multiple syntax</em>
     </li>
 </ul>
 
@@ -107,12 +126,16 @@
 <ul>
     <li>
         No Extra Components, Configuration, Function,Element, Line, Letter
+        <br><em>how beutiful is the explorer view</em>
     </li>
      <li>
-        Unit Format in all places (Hyrerchy, File Names, File Path, function names, class names, variable names)
+        Unit Format in all places <br><em> Hyrerchy, File Names, File Path, function names, class names, variable names</em>
     </li>
     <li>
         Easy to find reusable components to use or wrap it
+    </li>
+    <li>
+        Automatic and Manual Cleaning <br><em> not only by automatic analyzev (e.g Sonar Cloud) but also aligning with structre map (which we create it internally) based on project concepts</em>
     </li>
 </ul>
 
@@ -120,18 +143,18 @@
 ### base on the situation I will use mix of below design patterns
 <ul>
     <li>
-        Provider Pattern <em>almost every project</em>
-    </li>
-     <li>
-        the HOC Pattern <em>mostly for thirdparties</em>
+        React-Hook <em>Customised Hooks helps alot to reusablity and readability </em>
     </li>
     <li>
-        React-Redux <em>almost every projects</em>
+        React-Redux <em>State Management and api free development</em>
     </li>
     <li>
-        React-Hook <em>almost every project</em>
+        Provider Pattern <em>Managing Theme, Translation, Authentication</em>
     </li>
      <li>
+        HOC Pattern <em>Avoid conflict with thirdarties</em>
+    </li>
+    <li>
         NexJS Pattern <em>if the project needs server side rendering, e.g SEO dependent project</em>
     </li>
 </ul>
@@ -149,10 +172,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Modularity: Encapsulated Repository for Components, Whitebox-DesignSystem, Storybook
 ## MultiBorower Support
 ## Performanc: React-snapshots
-## Test, Jest, E2E (Pupetter),React testing library
+## Test, Jest, E2E (Pupetter),React testing library, Scenario Base
 ## React Context Provider
 ## React Theme Provider
 ## React Trekk Provider
 ## Webpack
 ## npmrc
 ## env management
+## CODE COVERAGE
