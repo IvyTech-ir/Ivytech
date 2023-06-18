@@ -1,2 +1,2 @@
-import { Counter } from "./counter/counter";
+import { Counter } from './counter/counter';
 export { Counter };
