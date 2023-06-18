@@ -6,7 +6,10 @@
     "target": "es5",
     "allowJs": true,
     "jsx": "react",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    // "paths": { 
+    //     "ccc": ["./src"],
+    //   }
   },
   "files": [
     "src/index.tsx"
