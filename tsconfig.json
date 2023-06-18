@@ -9,10 +9,9 @@
     "moduleResolution": "node"
   },
   "files": [
-    "src/index.tsx"
+    "src/app/index.tsx"
   ],
   "include": [
-    "src/config/setupAssetModules.ts",
-    // "src/components/counter/Counter.ts",
+    "src/config/setupAssetModules.ts"
   ]
 }
