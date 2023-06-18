@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "./assets/images/logo.svg";
-import { Counter } from "./../components";
+import { Counter } from "./components";
 import "./assets/css/App.css";
 
 function App() {

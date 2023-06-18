@@ -9,7 +9,7 @@
     "moduleResolution": "node"
   },
   "files": [
-    "src/app/index.tsx"
+    "src/index.tsx"
   ],
   "include": [
     "src/config/setupAssetModules.ts"

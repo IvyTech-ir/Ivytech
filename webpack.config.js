@@ -9,7 +9,7 @@ const isProduction = process.env.NODE_ENV == 'production';
 const stylesHandler = 'style-loader';
 
 const config = {
-    entry: './src/app/index.tsx',
+    entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
     },
