@@ -6,10 +6,7 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == 'production';
 
-
 const stylesHandler = 'style-loader';
-
-
 
 const config = {
     entry: './src/index.ts',
@@ -52,7 +49,6 @@ const config = {
         extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
     },
 };
-
 module.exports = () => {
     if (isProduction) {
         config.mode = 'production';

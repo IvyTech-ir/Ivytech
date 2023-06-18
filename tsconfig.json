@@ -6,8 +6,12 @@
     "target": "es5",
     "allowJs": true,
     "jsx": "react",
-    "moduleResolution":"nodenext",
+    "moduleResolution": "node"
   },
-  "files": ["src/index.tsx"],
-  "include": ["src/custom.d.ts"]
+  "files": [
+    "src/index.tsx"
+  ],
+  "include": [
+    "src/config/setupAssetModules.ts"
+  ]
 }
