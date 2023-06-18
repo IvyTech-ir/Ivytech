@@ -182,3 +182,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## CODE COVERAGE
 ## Post CSS
 ## Code Splitting (Webpack) https://webpack.js.org/guides/code-splitting/
+## Wrapup Export Pattern

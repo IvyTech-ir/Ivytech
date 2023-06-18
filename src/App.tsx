@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from "./assets/images/logo.svg";
-import { Counter } from "./components/counter/Counter";
+import { Counter } from "./components";
 import "./assets/css/App.css";
 
 function App() {
+  console.log("couinter", Counter)
   return (
     <div className="App">
       <header className="App-header">
