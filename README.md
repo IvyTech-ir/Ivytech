@@ -185,3 +185,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Wrapup Export Pattern
 ## config index.html
 ## Authoriztion Mechanism
+## Storybook Samples
+## what else with redux?
