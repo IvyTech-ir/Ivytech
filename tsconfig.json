@@ -6,15 +6,13 @@
     "target": "es5",
     "allowJs": true,
     "jsx": "react",
-    "moduleResolution": "node",
-    // "paths": { 
-    //     "ccc": ["./src"],
-    //   }
+    "moduleResolution": "node"
   },
   "files": [
     "src/index.tsx"
   ],
   "include": [
-    "src/config/setupAssetModules.ts"
+    "src/config/setupAssetModules.ts",
+    // "src/components/counter/Counter.ts",
   ]
 }

@@ -46,10 +46,7 @@ const config = {
         ],
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
-        // alias: {
-        //     "ccc": path.resolve(__dirname,"src")
-        //    }
+        extensions: ['.tsx', '.ts', '.jsx', '.js', '...']
     },
 };
 module.exports = () => {

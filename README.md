@@ -181,3 +181,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## env management
 ## CODE COVERAGE
 ## Post CSS
+## Code Splitting (Webpack) https://webpack.js.org/guides/code-splitting/
