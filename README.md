@@ -183,3 +183,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Post CSS
 ## Code Splitting (Webpack) https://webpack.js.org/guides/code-splitting/
 ## Wrapup Export Pattern
+## config index.html
+## Authoriztion Mechanism
