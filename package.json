@@ -1,5 +1,6 @@
 {
-  "name": "my-webpack-project",
+  "name": "whitebox",
+  "description": "Whitebox Draft Frontend Solution",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -71,6 +72,5 @@
     "webpack": "^5.87.0",
     "webpack-cli": "^5.1.4"
   },
-  "description": "Whitebox",
   "puppeteer": {}
 }
