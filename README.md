@@ -1,9 +1,3 @@
-<style>
-    em
-    {
-        color:gray;
-    }
-</style>
 
 # Whitebox (Shahab's Sample Architecht)
 
