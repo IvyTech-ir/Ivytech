@@ -12,7 +12,6 @@
     <li>how a clean solution would look from your perspective?</li>
     <li>which design pattern you’d choose?</li>
 </ol>
-<strong>Note:</strong> The project should demonstrate the standards you expect from a clean solution. 
 <hr/>
 
 ## 1- How I set up a project
