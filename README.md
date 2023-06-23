@@ -1,5 +1,5 @@
 
-# Whitebox (Shahab's Sample Architecht)
+# Shahab's Sample Architecht
 
 
 
