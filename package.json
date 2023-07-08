@@ -36,12 +36,13 @@
     "start": "export HTTPS=true&&SSL_CRT_FILE=cert.pem&&SSL_KEY_FILE=key.pem react-scripts start",
     "build": "webpack --mode=production --node-env=production",
     "test": "react-scripts test",
-    "e2e": "node src/services/e2e.mjs",
+    "e2e": "node scripts/e2e.mjs",
     "eject": "react-scripts eject",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "cleanCode":"scripts/script-prettier.sh"
   },
   "eslintConfig": {
     "extends": [
