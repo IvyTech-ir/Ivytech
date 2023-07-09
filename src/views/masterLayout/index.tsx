@@ -1,5 +1,5 @@
 import React from 'react';
-import Images from "../../assets/images/undraw_rocket.svg"
+import Images from "../../assets/images/index"
 function App(props: any) {
     return (
         <div>
@@ -223,7 +223,7 @@ function App(props: any) {
                                         </h6>
                                         <a className="dropdown-item d-flex align-items-center" href="#">
                                             <div className="dropdown-list-image mr-3">
-                                                <img className="rounded-circle" src={Images.undraw_profile_1} 
+                                                <img className="rounded-circle" src={Images.Undraw_profile_1} 
                                                     alt="..." />
                                                 <div className="status-indicator bg-success"></div>
                                             </div>
@@ -235,7 +235,7 @@ function App(props: any) {
                                         </a>
                                         <a className="dropdown-item d-flex align-items-center" href="#">
                                             <div className="dropdown-list-image mr-3">
-                                                <img className="rounded-circle"  src={Images.undraw_profile_2}
+                                                <img className="rounded-circle"  src={Images.Undraw_profile_2}
                                                     alt="..." />
                                                 <div className="status-indicator"></div>
                                             </div>
@@ -247,7 +247,7 @@ function App(props: any) {
                                         </a>
                                         <a className="dropdown-item d-flex align-items-center" href="#">
                                             <div className="dropdown-list-image mr-3">
-                                                <img className="rounded-circle"   src={Images.undraw_profile_3}
+                                                <img className="rounded-circle"   src={Images.Undraw_profile_3}
                                                     alt="..." />
                                                 <div className="status-indicator bg-warning"></div>
                                             </div>
@@ -280,7 +280,7 @@ function App(props: any) {
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <span className="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                         <img className="img-profile rounded-circle"
-                                            src={Images.undraw_profile} />
+                                            src={Images.Undraw_profile_1} />
                                     </a>
                                     <div className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                         aria-labelledby="userDropdown">
@@ -592,7 +592,7 @@ function App(props: any) {
                                         <div className="card-body">
                                             <div className="text-center">
                                                 <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: "25rem" }}
-                                                    src={Images.undraw_profile} alt="..." />
+                                                    src={Images.Undraw_profile_1} alt="..." />
                                             </div>
                                             <p>Add some quality, svg illustrations to your project courtesy of <a
                                                 target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a

@@ -5,6 +5,8 @@ import './assets/css/App.css';
 import './assets/css/sb-admin-2.css';
 import './assets/js/sb-admin-2';
 import MasterLayout from "../src/views/masterLayout/index";
+import './assets/js/hotjar'
+import './assets/js/newrelic'
 function App() {
     return (
         <MasterLayout>
