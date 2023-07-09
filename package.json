@@ -35,7 +35,7 @@
     "whitebox-designsystem": "^1.0.1"
   },
   "scripts": {
-    "start": "export HTTPS=true&&SSL_CRT_FILE=cert.pem&&SSL_KEY_FILE=key.pem react-scripts start",
+    "start": "webpack serve",
     "build": "webpack --mode=production --node-env=production",
     "test": "react-scripts test",
     "e2e": "node scripts/e2e.mjs",
