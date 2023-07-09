@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -22,6 +23,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "jest": "^27.5.1",
+    "jquery": "^3.7.0",
     "prettier": "^2.6.2",
     "puppeteer": "^20.7.2",
     "react": "^18.2.0",
@@ -42,7 +44,7 @@
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "serve": "webpack serve",
-    "cleanCode":"scripts/script-prettier.sh"
+    "cleanCode": "scripts/script-prettier.sh"
   },
   "eslintConfig": {
     "extends": [

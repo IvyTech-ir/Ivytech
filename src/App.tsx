@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './assets/images/logo.svg';
 import { Counter } from './components';
 import './assets/css/App.css';
-
+import './assets/css/sb-admin-2.css';
+import './assets/js/sb-admin-2';
 function App() {
-    console.log('couinter', Counter);
     return (
         <div className="App">
             <header className="App-header">
