@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Images from "../../assets/images/index"
+import ChartAreaDemo from "../../assets/js/demo/chart-area-demo";
+import ChartPieDemo from "../../assets/js/demo/chart-pie-demo";
 function App(props: any) {
+    const chartRef_Area = useRef();
+    const chartRef_Pie = useRef();
+    const [ischartLoadded,setIsChartLoaded]=  useState(false);
+    useEffect(() => {
+        if(!ischartLoadded)
+        {
+            ChartAreaDemo(chartRef_Area.current);
+            ChartPieDemo(chartRef_Pie.current);
+        }
+    });
     return (
         <div>
             <div id="wrapper">
@@ -424,7 +436,7 @@ function App(props: any) {
                                         </div>
                                         <div className="card-body">
                                             <div className="chart-area">
-                                                <canvas id="myAreaChart"></canvas>
+                                                <canvas  ref={chartRef_Area} ></canvas>
                                             </div>
                                         </div>
                                     </div>
@@ -452,7 +464,7 @@ function App(props: any) {
                                         </div>
                                         <div className="card-body">
                                             <div className="chart-pie pt-4 pb-2">
-                                                <canvas id="myPieChart"></canvas>
+                                                <canvas id="myPieChart" ref={chartRef_Pie}></canvas>
                                             </div>
                                             <div className="mt-4 text-center small">
                                                 <span className="mr-2">
@@ -658,8 +670,6 @@ function App(props: any) {
                 </div>
             </div>
         </div>
-
-
     );
 }
 
