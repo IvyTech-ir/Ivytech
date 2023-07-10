@@ -11,6 +11,7 @@ function App(props: any) {
         {
             ChartAreaDemo(chartRef_Area.current);
             ChartPieDemo(chartRef_Pie.current);
+            setIsChartLoaded(true);
         }
     });
     return (
