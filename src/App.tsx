@@ -5,7 +5,7 @@ import { Counter } from './components';
 import './assets/css/App.css';
 import './assets/css/sb-admin-2.css';
 import './assets/vendor/fontawesome-free/css/all.css';
-// import './assets/vendor/fontawesome-free/js/all';
+import './assets/vendor/fontawesome-free/js/all';
 // import './assets/vendor/bootstrap/js/bootstrap.bundle';
 // import './assets/vendor/jquery-easing/jquery.easing';
 // import './assets/vendor/chart.js/Chart.bundle';

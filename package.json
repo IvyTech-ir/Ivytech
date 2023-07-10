@@ -36,8 +36,7 @@
   },
   "scripts": {
     "start": "webpack serve",
-    "build": "scripts/script-build.sh",
-    "buildw": " webpack --mode=production --node-env=production",
+    "build": "scripts/script-build.sh && webpack --mode=production --node-env=production",
     "test": "react-scripts test",
     "e2e": "node scripts/e2e.mjs",
     "eject": "react-scripts eject",
