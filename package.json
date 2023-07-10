@@ -36,7 +36,8 @@
   },
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --mode=production --node-env=production",
+    "build": "scripts/script-build.sh",
+    "buildw": " webpack --mode=production --node-env=production",
     "test": "react-scripts test",
     "e2e": "node scripts/e2e.mjs",
     "eject": "react-scripts eject",
@@ -44,7 +45,8 @@
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "serve": "webpack serve",
-    "cleanCode": "scripts/script-prettier.sh"
+    "cleanCode": "scripts/script-prettier.sh",
+    "ttsc": "ttsc -p tsconfig.json"
   },
   "eslintConfig": {
     "extends": [
