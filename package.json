@@ -32,8 +32,7 @@
     "react-redux": "^8.1.0",
     "react-scripts": "5.0.1",
     "react-test-renderer": "^18.0.0",
-    "web-vitals": "^2.1.4",
-    "whitebox-designsystem": "^1.0.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "webpack serve",
@@ -46,12 +45,15 @@
     "watch": "webpack --watch",
     "serve": "webpack serve",
     "cleanCode": "scripts/script-prettier.sh",
-    "ttsc": "ttsc -p tsconfig.json"
+    "ttsc": "ttsc -p tsconfig.json",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended"
     ]
   },
   "browserslist": {
@@ -69,9 +71,21 @@
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
+    "@storybook/addon-essentials": "^7.0.26",
+    "@storybook/addon-interactions": "^7.0.26",
+    "@storybook/addon-links": "^7.0.26",
+    "@storybook/blocks": "^7.0.26",
+    "@storybook/preset-create-react-app": "^7.0.26",
+    "@storybook/react": "^7.0.26",
+    "@storybook/react-webpack5": "^7.0.26",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@webpack-cli/generators": "^3.0.7",
     "babel-loader": "^9.1.2",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "css-loader": "^6.8.1",
+    "eslint-plugin-storybook": "^0.6.12",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.26",
     "ts-loader": "^9.4.3",
     "tsconfig-paths-webpack-plugin": "^4.0.1",
     "webpack": "^5.87.0",

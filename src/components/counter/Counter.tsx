@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-
-import { useAppSelector, useAppDispatch } from '../../hooks/hooks';
 import { decrement, increment, incrementByAmount, incrementAsync, incrementIfOdd, selectCount } from './counterSlice';
+import { useAppSelector, useAppDispatch } from '../../hooks/hooks';
 import styles from './Counter.module.css';
 
 export function Counter() {
