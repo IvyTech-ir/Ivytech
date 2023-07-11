@@ -5,13 +5,6 @@ import { Counter } from './components';
 import './assets/css/App.css';
 import './assets/css/sb-admin-2.css';
 import '../public/assets/vendor/fontawesome-free/css/all.css';
-import '../public/assets/vendor/fontawesome-free/js/all';
-// import './assets/vendor/bootstrap/js/bootstrap.min.js';
-// import './assets/vendor/jquery-easing/jquery.easing';
-// import './assets/vendor/chart.js/Chart.bundle';
-// import './assets/js/sb-admin-2';
-// import './assets/js/hotjar';
-// import './assets/js/newrelic';
 
 function App() {
     return (
