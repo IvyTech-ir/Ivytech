@@ -55,7 +55,7 @@
       "node_modules",
       "**/*.test.ts",
       "**/*.test.tsx",
-      "src/assets/vendor/**/*.js",
+      "public/assets/vendor/**/*.js",
       "./build/*",
       "./dist/*",
   ]

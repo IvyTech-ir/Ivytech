@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Images from "../../assets/images/index"
-// import ChartAreaDemo from "../../assets/js/demo/chart-area-demo";
-// import ChartPieDemo from "../../assets/js/demo/chart-pie-demo";
+import ChartAreaDemo from "../../assets/js/demo/chart-area-demo";
+import ChartPieDemo from "../../assets/js/demo/chart-pie-demo";
 function App(props: any) {
     const chartRef_Area = useRef();
     const chartRef_Pie = useRef();
@@ -9,15 +9,15 @@ function App(props: any) {
     useEffect(() => {
         if(!ischartLoadded)
         {
-            // ChartAreaDemo(chartRef_Area.current);
-            // ChartPieDemo(chartRef_Pie.current);
+            ChartAreaDemo(chartRef_Area.current);
+            ChartPieDemo(chartRef_Pie.current);
             setIsChartLoaded(true);
         }
     });
     return (
         <div>
+            <script src="assets/vendor/chart.js/Chart.min.js"></script>
             <div id="wrapper">
-
                 <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                     <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">

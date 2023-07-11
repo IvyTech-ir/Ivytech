@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rm -rf build && npm run ttsc
+rm -rf build && rm -rf dist && npm run ttsc
 status=$?
 if [ $status -eq 0 ]
 then
