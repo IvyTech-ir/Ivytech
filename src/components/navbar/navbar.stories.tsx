@@ -16,4 +16,20 @@ const meta: Meta<typeof Navbar> = {
 
 export default meta;
 type CounterStory = StoryObj<typeof Navbar>;
-export const Default: CounterStory = {};
+export const Default: CounterStory = {
+  args: {
+    Items:
+      [
+        {
+          Link: "",
+          Caption: "Interface",
+          Items:[
+            {
+              Caption:"test",
+              Fa:"cog"
+            }
+          ]
+        }
+      ]
+  }
+};

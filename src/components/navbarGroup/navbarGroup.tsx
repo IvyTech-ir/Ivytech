@@ -1,19 +1,38 @@
 import React from 'react';
 
-interface NavbarItem {
-    Caption: string;
-    Link: string;
+export interface NavbarItem {
+    Caption?: string;
+    Link?: string;
+    Fa?:string
+    Items?: Array<NavbarItem>;
 }
-interface NavbarGroupProps {
-    Items: Array<NavbarItem>;
+export interface NavbarGroupProps extends NavbarItem {
 }
-export default function NavbarGroup({ Items, ...rest }: NavbarGroupProps) {
+export default function NavbarGroup({ Items, Caption, ...rest }: NavbarGroupProps) {
     return (
         <>
             <div className="sidebar-heading" {...rest}>
-                Interface
+                {Caption}
             </div>
-
+            {JSON.stringify(Items)}
+            {Items.map(item => {
+                return (
+                    <li className="nav-item">
+                        <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="true" aria-controls="collapseTwo">
+                            <i className={`fas fa-fw fa-${item.Fa}`}></i>
+                            <span>{item.Caption}</span>
+                        </a>
+                        <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                            <div className="bg-white py-2 collapse-inner rounded">
+                                <h6 className="collapse-header">Custom Components:</h6>
+                                <a className="collapse-item" href="buttons.html">Buttons</a>
+                                <a className="collapse-item" href="cards.html">Cards</a>
+                            </div>
+                        </div>
+                    </li>
+                )
+            })}
             <li className="nav-item">
                 <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
@@ -47,6 +66,5 @@ export default function NavbarGroup({ Items, ...rest }: NavbarGroupProps) {
                 </div>
             </li>
         </>
-
     );
 }
