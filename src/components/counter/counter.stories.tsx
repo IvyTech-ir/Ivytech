@@ -19,6 +19,4 @@ const meta: Meta<typeof Counter> = {
 
 export default meta;
 type CounterStory = StoryObj<typeof Counter>;
-export const Primary: CounterStory = {
-  
-};
+export const Default: CounterStory = {};
