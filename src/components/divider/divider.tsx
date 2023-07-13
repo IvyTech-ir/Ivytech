@@ -1,7 +1,8 @@
-import React  from 'react';
+import React from 'react';
+import { StyledDivider } from './divider.style';
 
-export default function Divider( ) {
+export default function Divider() {
     return (
-        <hr className="sidebar-divider my-0"></hr>
+        <StyledDivider className="sidebar-divider my-0"></StyledDivider>
     );
 }
