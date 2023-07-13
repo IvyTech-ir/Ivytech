@@ -3,32 +3,29 @@ import Images from "../../assets/images/index"
 import ChartAreaDemo from "../../assets/js/demo/chart-area-demo";
 import ChartPieDemo from "../../assets/js/demo/chart-pie-demo";
 import Navbar from '../../components/navbar/navbar';
+import NavbarItems from '../../components/navbar/data';
+
 function App(props: any) {
     const chartRef_Area = useRef();
     const chartRef_Pie = useRef();
-    const [ischartLoadded,setIsChartLoaded]=  useState(false);
+    const [ischartLoadded, setIsChartLoaded] = useState(false);
     useEffect(() => {
-        if(!ischartLoadded)
-        {
+        if (!ischartLoadded) {
             ChartAreaDemo(chartRef_Area.current);
             ChartPieDemo(chartRef_Pie.current);
             setIsChartLoaded(true);
         }
     });
     return (
-        <div>
+        <>
             <div id="wrapper">
-                <Navbar></Navbar>
+                <Navbar items={NavbarItems}></Navbar>
                 <div id="content-wrapper" className="d-flex flex-column">
-
                     <div id="content">
-
                         <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
                             <button id="sidebarToggleTop" className="btn btn-link d-md-none rounded-circle mr-3">
                                 <i className="fa fa-bars"></i>
                             </button>
-
                             <form
                                 className="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                 <div className="input-group">
@@ -41,7 +38,6 @@ function App(props: any) {
                                     </div>
                                 </div>
                             </form>
-
                             <ul className="navbar-nav ml-auto">
 
                                 <li className="nav-item dropdown no-arrow d-sm-none">
@@ -129,7 +125,7 @@ function App(props: any) {
                                         </h6>
                                         <a className="dropdown-item d-flex align-items-center" href="#">
                                             <div className="dropdown-list-image mr-3">
-                                                <img className="rounded-circle" src={Images.Undraw_profile_1} 
+                                                <img className="rounded-circle" src={Images.Undraw_profile_1}
                                                     alt="..." />
                                                 <div className="status-indicator bg-success"></div>
                                             </div>
@@ -141,7 +137,7 @@ function App(props: any) {
                                         </a>
                                         <a className="dropdown-item d-flex align-items-center" href="#">
                                             <div className="dropdown-list-image mr-3">
-                                                <img className="rounded-circle"  src={Images.Undraw_profile_2}
+                                                <img className="rounded-circle" src={Images.Undraw_profile_2}
                                                     alt="..." />
                                                 <div className="status-indicator"></div>
                                             </div>
@@ -153,7 +149,7 @@ function App(props: any) {
                                         </a>
                                         <a className="dropdown-item d-flex align-items-center" href="#">
                                             <div className="dropdown-list-image mr-3">
-                                                <img className="rounded-circle"   src={Images.Undraw_profile_3}
+                                                <img className="rounded-circle" src={Images.Undraw_profile_3}
                                                     alt="..." />
                                                 <div className="status-indicator bg-warning"></div>
                                             </div>
@@ -330,7 +326,7 @@ function App(props: any) {
                                         </div>
                                         <div className="card-body">
                                             <div className="chart-area">
-                                                <canvas  ref={chartRef_Area} ></canvas>
+                                                <canvas ref={chartRef_Area} ></canvas>
                                             </div>
                                         </div>
                                     </div>
@@ -528,7 +524,6 @@ function App(props: any) {
                         </div>
 
                     </div>
-
                     <footer className="sticky-footer bg-white">
                         <div className="container my-auto">
                             <div className="copyright text-center my-auto">
@@ -536,13 +531,11 @@ function App(props: any) {
                             </div>
                         </div>
                     </footer>
-
                 </div>
             </div>
             <a className="scroll-to-top rounded" href="#page-top">
                 <i className="fas fa-angle-up"></i>
             </a>
-
             <div className="modal fade" id="logoutModal" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div className="modal-dialog" role="document">
@@ -561,7 +554,7 @@ function App(props: any) {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

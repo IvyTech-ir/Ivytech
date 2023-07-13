@@ -1,70 +1,63 @@
 import React from 'react';
 
+export type NavbarItemTypes = 'default' | 'heading'
+
 export interface NavbarItem {
-    Caption?: string;
-    Link?: string;
-    Fa?:string
-    Items?: Array<NavbarItem>;
+    caption?: string;
+    innreCaption?: string;
+    link?: string;
+    fa?: string
+    items?: Array<NavbarItem>;
+    type?: NavbarItemTypes
 }
+
 export interface NavbarGroupProps extends NavbarItem {
 }
-export default function NavbarGroup({ Items, Caption, ...rest }: NavbarGroupProps) {
-    return (
+
+
+export default function NavbarGroup({ items, caption, type, ...rest }: NavbarGroupProps) {
+    if (type === 'default') {
+        return (
+            <>
+                <hr className="sidebar-divider my-0"></hr>
+                <li className="nav-item active">
+                    <a className="nav-link" href="index.html">
+                        <i className="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+                <hr className="sidebar-divider mb-2"></hr>
+            </>
+        );
+    }
+    else if (type === 'heading') return (
         <>
             <div className="sidebar-heading" {...rest}>
-                {Caption}
+                {caption}
             </div>
-            {JSON.stringify(Items)}
-            {Items.map(item => {
+            {items?.map((item, index) => {
+                const id = `collapse_${index}`;
                 return (
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                        <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target={`#${id}`}
                             aria-expanded="true" aria-controls="collapseTwo">
-                            <i className={`fas fa-fw fa-${item.Fa}`}></i>
-                            <span>{item.Caption}</span>
+                            <i className={`fas fa-fw fa-${item.fa}`}></i>
+                            <span>{item.caption}</span>
                         </a>
-                        <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                            <div className="bg-white py-2 collapse-inner rounded">
-                                <h6 className="collapse-header">Custom Components:</h6>
-                                <a className="collapse-item" href="buttons.html">Buttons</a>
-                                <a className="collapse-item" href="cards.html">Cards</a>
+                        {item.items?.length > 0 &&
+                            <div id={id} className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                                <div className="bg-white py-2 collapse-inner rounded">
+                                    <h6 className="collapse-header">{item.innreCaption}</h6>
+                                    {item.items.map(innerItem => {
+                                        return (
+                                            <a className="collapse-item" href="buttons.html">{innerItem.caption}</a>
+                                        )
+                                    })}
+                                </div>
                             </div>
-                        </div>
+                        }
                     </li>
                 )
             })}
-            <li className="nav-item">
-                <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i className="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div className="bg-white py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Components:</h6>
-                        <a className="collapse-item" href="buttons.html">Buttons</a>
-                        <a className="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
-            </li>
-
-            <li className="nav-item">
-                <a className="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i className="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
-                </a>
-                <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div className="bg-white py-2 collapse-inner rounded">
-                        <h6 className="collapse-header">Custom Utilities:</h6>
-                        <a className="collapse-item" href="utilities-color.html">Colors</a>
-                        <a className="collapse-item" href="utilities-border.html">Borders</a>
-                        <a className="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a className="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
-                </div>
-            </li>
         </>
     );
 }

@@ -25,8 +25,12 @@ export const Default: CounterStory = {
           Caption: "Interface",
           Items:[
             {
-              Caption:"test",
+              Caption:"Components",
               Fa:"cog"
+            },
+            {
+              Caption:"Utilities",
+              Fa:"wrench"
             }
           ]
         }
