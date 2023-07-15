@@ -349,7 +349,9 @@ function App(props: any) {
                                                                 <div
                                                                     className="progress-bar bg-info"
                                                                     role="progressbar"
-                                                                    style={{ width: '50%' }}
+                                                                    style={{
+                                                                        width: '50%',
+                                                                    }}
                                                                 ></div>
                                                             </div>
                                                         </div>
@@ -493,7 +495,9 @@ function App(props: any) {
                                                 <div
                                                     className="progress-bar bg-danger"
                                                     role="progressbar"
-                                                    style={{ width: '20%' }}
+                                                    style={{
+                                                        width: '20%',
+                                                    }}
                                                 ></div>
                                             </div>
                                             <h4 className="small font-weight-bold">
@@ -539,7 +543,9 @@ function App(props: any) {
                                                 <div
                                                     className="progress-bar bg-success"
                                                     role="progressbar"
-                                                    style={{ width: '100%' }}
+                                                    style={{
+                                                        width: '100%',
+                                                    }}
                                                 ></div>
                                             </div>
                                         </div>
@@ -622,7 +628,9 @@ function App(props: any) {
                                             <div className="text-center">
                                                 <img
                                                     className="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                                                    style={{ width: '25rem' }}
+                                                    style={{
+                                                        width: '25rem',
+                                                    }}
                                                     src={Images.Undraw_profile_1}
                                                     alt="..."
                                                 />

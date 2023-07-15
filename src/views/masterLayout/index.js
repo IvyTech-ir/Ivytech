@@ -23,10 +23,16 @@ function App(props) {
             { id: 'wrapper' },
             React.createElement(
                 'ul',
-                { className: 'navbar-nav bg-gradient-primary sidebar sidebar-dark accordion', id: 'accordionSidebar' },
+                {
+                    className: 'navbar-nav bg-gradient-primary sidebar sidebar-dark accordion',
+                    id: 'accordionSidebar',
+                },
                 React.createElement(
                     'a',
-                    { className: 'sidebar-brand d-flex align-items-center justify-content-center', href: 'index.html' },
+                    {
+                        className: 'sidebar-brand d-flex align-items-center justify-content-center',
+                        href: 'index.html',
+                    },
                     React.createElement(
                         'div',
                         { className: 'sidebar-brand-icon rotate-n-15' },
@@ -115,22 +121,34 @@ function App(props) {
                             React.createElement('h6', { className: 'collapse-header' }, 'Custom Utilities:'),
                             React.createElement(
                                 'a',
-                                { className: 'collapse-item', href: 'utilities-color.html' },
+                                {
+                                    className: 'collapse-item',
+                                    href: 'utilities-color.html',
+                                },
                                 'Colors',
                             ),
                             React.createElement(
                                 'a',
-                                { className: 'collapse-item', href: 'utilities-border.html' },
+                                {
+                                    className: 'collapse-item',
+                                    href: 'utilities-border.html',
+                                },
                                 'Borders',
                             ),
                             React.createElement(
                                 'a',
-                                { className: 'collapse-item', href: 'utilities-animation.html' },
+                                {
+                                    className: 'collapse-item',
+                                    href: 'utilities-animation.html',
+                                },
                                 'Animations',
                             ),
                             React.createElement(
                                 'a',
-                                { className: 'collapse-item', href: 'utilities-other.html' },
+                                {
+                                    className: 'collapse-item',
+                                    href: 'utilities-other.html',
+                                },
                                 'Other',
                             ),
                         ),
@@ -170,7 +188,10 @@ function App(props) {
                             React.createElement('a', { className: 'collapse-item', href: 'register.html' }, 'Register'),
                             React.createElement(
                                 'a',
-                                { className: 'collapse-item', href: 'forgot-password.html' },
+                                {
+                                    className: 'collapse-item',
+                                    href: 'forgot-password.html',
+                                },
                                 'Forgot Password',
                             ),
                             React.createElement('div', { className: 'collapse-divider' }),
@@ -204,7 +225,10 @@ function App(props) {
                 React.createElement(
                     'div',
                     { className: 'text-center d-none d-md-inline' },
-                    React.createElement('button', { className: 'rounded-circle border-0', id: 'sidebarToggle' }),
+                    React.createElement('button', {
+                        className: 'rounded-circle border-0',
+                        id: 'sidebarToggle',
+                    }),
                 ),
                 React.createElement(
                     'div',
@@ -222,7 +246,10 @@ function App(props) {
                     ),
                     React.createElement(
                         'a',
-                        { className: 'btn btn-success btn-sm', href: 'https://startbootstrap.com/theme/sb-admin-pro' },
+                        {
+                            className: 'btn btn-success btn-sm',
+                            href: 'https://startbootstrap.com/theme/sb-admin-pro',
+                        },
                         'Upgrade to Pro!',
                     ),
                 ),
@@ -235,10 +262,15 @@ function App(props) {
                     { id: 'content' },
                     React.createElement(
                         'nav',
-                        { className: 'navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow' },
+                        {
+                            className: 'navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow',
+                        },
                         React.createElement(
                             'button',
-                            { id: 'sidebarToggleTop', className: 'btn btn-link d-md-none rounded-circle mr-3' },
+                            {
+                                id: 'sidebarToggleTop',
+                                className: 'btn btn-link d-md-none rounded-circle mr-3',
+                            },
                             React.createElement('i', { className: 'fa fa-bars' }),
                         ),
                         React.createElement(
@@ -262,8 +294,13 @@ function App(props) {
                                     { className: 'input-group-append' },
                                     React.createElement(
                                         'button',
-                                        { className: 'btn btn-primary', type: 'button' },
-                                        React.createElement('i', { className: 'fas fa-search fa-sm' }),
+                                        {
+                                            className: 'btn btn-primary',
+                                            type: 'button',
+                                        },
+                                        React.createElement('i', {
+                                            className: 'fas fa-search fa-sm',
+                                        }),
                                     ),
                                 ),
                             ),
@@ -285,7 +322,9 @@ function App(props) {
                                         'aria-haspopup': 'true',
                                         'aria-expanded': 'false',
                                     },
-                                    React.createElement('i', { className: 'fas fa-search fa-fw' }),
+                                    React.createElement('i', {
+                                        className: 'fas fa-search fa-fw',
+                                    }),
                                 ),
                                 React.createElement(
                                     'div',
@@ -295,7 +334,9 @@ function App(props) {
                                     },
                                     React.createElement(
                                         'form',
-                                        { className: 'form-inline mr-auto w-100 navbar-search' },
+                                        {
+                                            className: 'form-inline mr-auto w-100 navbar-search',
+                                        },
                                         React.createElement(
                                             'div',
                                             { className: 'input-group' },
@@ -308,11 +349,18 @@ function App(props) {
                                             }),
                                             React.createElement(
                                                 'div',
-                                                { className: 'input-group-append' },
+                                                {
+                                                    className: 'input-group-append',
+                                                },
                                                 React.createElement(
                                                     'button',
-                                                    { className: 'btn btn-primary', type: 'button' },
-                                                    React.createElement('i', { className: 'fas fa-search fa-sm' }),
+                                                    {
+                                                        className: 'btn btn-primary',
+                                                        type: 'button',
+                                                    },
+                                                    React.createElement('i', {
+                                                        className: 'fas fa-search fa-sm',
+                                                    }),
                                                 ),
                                             ),
                                         ),
@@ -333,10 +381,14 @@ function App(props) {
                                         'aria-haspopup': 'true',
                                         'aria-expanded': 'false',
                                     },
-                                    React.createElement('i', { className: 'fas fa-bell fa-fw' }),
+                                    React.createElement('i', {
+                                        className: 'fas fa-bell fa-fw',
+                                    }),
                                     React.createElement(
                                         'span',
-                                        { className: 'badge badge-danger badge-counter' },
+                                        {
+                                            className: 'badge badge-danger badge-counter',
+                                        },
                                         '3+',
                                     ),
                                 ),
@@ -350,14 +402,21 @@ function App(props) {
                                     React.createElement('h6', { className: 'dropdown-header' }, 'Alerts Center'),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item d-flex align-items-center', href: '#' },
+                                        {
+                                            className: 'dropdown-item d-flex align-items-center',
+                                            href: '#',
+                                        },
                                         React.createElement(
                                             'div',
                                             { className: 'mr-3' },
                                             React.createElement(
                                                 'div',
-                                                { className: 'icon-circle bg-primary' },
-                                                React.createElement('i', { className: 'fas fa-file-alt text-white' }),
+                                                {
+                                                    className: 'icon-circle bg-primary',
+                                                },
+                                                React.createElement('i', {
+                                                    className: 'fas fa-file-alt text-white',
+                                                }),
                                             ),
                                         ),
                                         React.createElement(
@@ -365,26 +424,37 @@ function App(props) {
                                             null,
                                             React.createElement(
                                                 'div',
-                                                { className: 'small text-gray-500' },
+                                                {
+                                                    className: 'small text-gray-500',
+                                                },
                                                 'December 12, 2019',
                                             ),
                                             React.createElement(
                                                 'span',
-                                                { className: 'font-weight-bold' },
+                                                {
+                                                    className: 'font-weight-bold',
+                                                },
                                                 'A new monthly report is ready to download!',
                                             ),
                                         ),
                                     ),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item d-flex align-items-center', href: '#' },
+                                        {
+                                            className: 'dropdown-item d-flex align-items-center',
+                                            href: '#',
+                                        },
                                         React.createElement(
                                             'div',
                                             { className: 'mr-3' },
                                             React.createElement(
                                                 'div',
-                                                { className: 'icon-circle bg-success' },
-                                                React.createElement('i', { className: 'fas fa-donate text-white' }),
+                                                {
+                                                    className: 'icon-circle bg-success',
+                                                },
+                                                React.createElement('i', {
+                                                    className: 'fas fa-donate text-white',
+                                                }),
                                             ),
                                         ),
                                         React.createElement(
@@ -392,7 +462,9 @@ function App(props) {
                                             null,
                                             React.createElement(
                                                 'div',
-                                                { className: 'small text-gray-500' },
+                                                {
+                                                    className: 'small text-gray-500',
+                                                },
                                                 'December 7, 2019',
                                             ),
                                             '$290.29 has been deposited into your account!',
@@ -400,13 +472,18 @@ function App(props) {
                                     ),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item d-flex align-items-center', href: '#' },
+                                        {
+                                            className: 'dropdown-item d-flex align-items-center',
+                                            href: '#',
+                                        },
                                         React.createElement(
                                             'div',
                                             { className: 'mr-3' },
                                             React.createElement(
                                                 'div',
-                                                { className: 'icon-circle bg-warning' },
+                                                {
+                                                    className: 'icon-circle bg-warning',
+                                                },
                                                 React.createElement('i', {
                                                     className: 'fas fa-exclamation-triangle text-white',
                                                 }),
@@ -417,7 +494,9 @@ function App(props) {
                                             null,
                                             React.createElement(
                                                 'div',
-                                                { className: 'small text-gray-500' },
+                                                {
+                                                    className: 'small text-gray-500',
+                                                },
                                                 'December 2, 2019',
                                             ),
                                             "Spending Alert: We've noticed unusually high spending for your account.",
@@ -425,7 +504,10 @@ function App(props) {
                                     ),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item text-center small text-gray-500', href: '#' },
+                                        {
+                                            className: 'dropdown-item text-center small text-gray-500',
+                                            href: '#',
+                                        },
                                         'Show All Alerts',
                                     ),
                                 ),
@@ -444,8 +526,16 @@ function App(props) {
                                         'aria-haspopup': 'true',
                                         'aria-expanded': 'false',
                                     },
-                                    React.createElement('i', { className: 'fas fa-envelope fa-fw' }),
-                                    React.createElement('span', { className: 'badge badge-danger badge-counter' }, '7'),
+                                    React.createElement('i', {
+                                        className: 'fas fa-envelope fa-fw',
+                                    }),
+                                    React.createElement(
+                                        'span',
+                                        {
+                                            className: 'badge badge-danger badge-counter',
+                                        },
+                                        '7',
+                                    ),
                                 ),
                                 React.createElement(
                                     'div',
@@ -457,124 +547,175 @@ function App(props) {
                                     React.createElement('h6', { className: 'dropdown-header' }, 'Message Center'),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item d-flex align-items-center', href: '#' },
+                                        {
+                                            className: 'dropdown-item d-flex align-items-center',
+                                            href: '#',
+                                        },
                                         React.createElement(
                                             'div',
-                                            { className: 'dropdown-list-image mr-3' },
+                                            {
+                                                className: 'dropdown-list-image mr-3',
+                                            },
                                             React.createElement('img', {
                                                 className: 'rounded-circle',
                                                 src: Images.Undraw_profile_1,
                                                 alt: '...',
                                             }),
-                                            React.createElement('div', { className: 'status-indicator bg-success' }),
+                                            React.createElement('div', {
+                                                className: 'status-indicator bg-success',
+                                            }),
                                         ),
                                         React.createElement(
                                             'div',
-                                            { className: 'font-weight-bold' },
+                                            {
+                                                className: 'font-weight-bold',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'text-truncate' },
+                                                {
+                                                    className: 'text-truncate',
+                                                },
                                                 "Hi there! I am wondering if you can help me with a problem I've been having.",
                                             ),
                                             React.createElement(
                                                 'div',
-                                                { className: 'small text-gray-500' },
+                                                {
+                                                    className: 'small text-gray-500',
+                                                },
                                                 'Emily Fowler \u00B7 58m',
                                             ),
                                         ),
                                     ),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item d-flex align-items-center', href: '#' },
+                                        {
+                                            className: 'dropdown-item d-flex align-items-center',
+                                            href: '#',
+                                        },
                                         React.createElement(
                                             'div',
-                                            { className: 'dropdown-list-image mr-3' },
+                                            {
+                                                className: 'dropdown-list-image mr-3',
+                                            },
                                             React.createElement('img', {
                                                 className: 'rounded-circle',
                                                 src: Images.Undraw_profile_2,
                                                 alt: '...',
                                             }),
-                                            React.createElement('div', { className: 'status-indicator' }),
+                                            React.createElement('div', {
+                                                className: 'status-indicator',
+                                            }),
                                         ),
                                         React.createElement(
                                             'div',
                                             null,
                                             React.createElement(
                                                 'div',
-                                                { className: 'text-truncate' },
+                                                {
+                                                    className: 'text-truncate',
+                                                },
                                                 'I have the photos that you ordered last month, how would you like them sent to you?',
                                             ),
                                             React.createElement(
                                                 'div',
-                                                { className: 'small text-gray-500' },
+                                                {
+                                                    className: 'small text-gray-500',
+                                                },
                                                 'Jae Chun \u00B7 1d',
                                             ),
                                         ),
                                     ),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item d-flex align-items-center', href: '#' },
+                                        {
+                                            className: 'dropdown-item d-flex align-items-center',
+                                            href: '#',
+                                        },
                                         React.createElement(
                                             'div',
-                                            { className: 'dropdown-list-image mr-3' },
+                                            {
+                                                className: 'dropdown-list-image mr-3',
+                                            },
                                             React.createElement('img', {
                                                 className: 'rounded-circle',
                                                 src: Images.Undraw_profile_3,
                                                 alt: '...',
                                             }),
-                                            React.createElement('div', { className: 'status-indicator bg-warning' }),
+                                            React.createElement('div', {
+                                                className: 'status-indicator bg-warning',
+                                            }),
                                         ),
                                         React.createElement(
                                             'div',
                                             null,
                                             React.createElement(
                                                 'div',
-                                                { className: 'text-truncate' },
+                                                {
+                                                    className: 'text-truncate',
+                                                },
                                                 "Last month's report looks great, I am very happy with the progress so far, keep up the good work!",
                                             ),
                                             React.createElement(
                                                 'div',
-                                                { className: 'small text-gray-500' },
+                                                {
+                                                    className: 'small text-gray-500',
+                                                },
                                                 'Morgan Alvarez \u00B7 2d',
                                             ),
                                         ),
                                     ),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item d-flex align-items-center', href: '#' },
+                                        {
+                                            className: 'dropdown-item d-flex align-items-center',
+                                            href: '#',
+                                        },
                                         React.createElement(
                                             'div',
-                                            { className: 'dropdown-list-image mr-3' },
+                                            {
+                                                className: 'dropdown-list-image mr-3',
+                                            },
                                             React.createElement('img', {
                                                 className: 'rounded-circle',
                                                 src: 'https://source.unsplash.com/Mv9hjnEUHR4/60x60',
                                                 alt: '...',
                                             }),
-                                            React.createElement('div', { className: 'status-indicator bg-success' }),
+                                            React.createElement('div', {
+                                                className: 'status-indicator bg-success',
+                                            }),
                                         ),
                                         React.createElement(
                                             'div',
                                             null,
                                             React.createElement(
                                                 'div',
-                                                { className: 'text-truncate' },
+                                                {
+                                                    className: 'text-truncate',
+                                                },
                                                 "Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...",
                                             ),
                                             React.createElement(
                                                 'div',
-                                                { className: 'small text-gray-500' },
+                                                {
+                                                    className: 'small text-gray-500',
+                                                },
                                                 'Chicken the Dog \u00B7 2w',
                                             ),
                                         ),
                                     ),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item text-center small text-gray-500', href: '#' },
+                                        {
+                                            className: 'dropdown-item text-center small text-gray-500',
+                                            href: '#',
+                                        },
                                         'Read More Messages',
                                     ),
                                 ),
                             ),
-                            React.createElement('div', { className: 'topbar-divider d-none d-sm-block' }),
+                            React.createElement('div', {
+                                className: 'topbar-divider d-none d-sm-block',
+                            }),
                             React.createElement(
                                 'li',
                                 { className: 'nav-item dropdown no-arrow' },
@@ -591,7 +732,9 @@ function App(props) {
                                     },
                                     React.createElement(
                                         'span',
-                                        { className: 'mr-2 d-none d-lg-inline text-gray-600 small' },
+                                        {
+                                            className: 'mr-2 d-none d-lg-inline text-gray-600 small',
+                                        },
                                         'Douglas McGee',
                                     ),
                                     React.createElement('img', {
@@ -607,7 +750,10 @@ function App(props) {
                                     },
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item', href: '#' },
+                                        {
+                                            className: 'dropdown-item',
+                                            href: '#',
+                                        },
                                         React.createElement('i', {
                                             className: 'fas fa-user fa-sm fa-fw mr-2 text-gray-400',
                                         }),
@@ -615,7 +761,10 @@ function App(props) {
                                     ),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item', href: '#' },
+                                        {
+                                            className: 'dropdown-item',
+                                            href: '#',
+                                        },
                                         React.createElement('i', {
                                             className: 'fas fa-cogs fa-sm fa-fw mr-2 text-gray-400',
                                         }),
@@ -623,13 +772,18 @@ function App(props) {
                                     ),
                                     React.createElement(
                                         'a',
-                                        { className: 'dropdown-item', href: '#' },
+                                        {
+                                            className: 'dropdown-item',
+                                            href: '#',
+                                        },
                                         React.createElement('i', {
                                             className: 'fas fa-list fa-sm fa-fw mr-2 text-gray-400',
                                         }),
                                         'Activity Log',
                                     ),
-                                    React.createElement('div', { className: 'dropdown-divider' }),
+                                    React.createElement('div', {
+                                        className: 'dropdown-divider',
+                                    }),
                                     React.createElement(
                                         'a',
                                         {
@@ -653,12 +807,19 @@ function App(props) {
                         React.createElement('div', null, props.children),
                         React.createElement(
                             'div',
-                            { className: 'd-sm-flex align-items-center justify-content-between mb-4' },
+                            {
+                                className: 'd-sm-flex align-items-center justify-content-between mb-4',
+                            },
                             React.createElement('h1', { className: 'h3 mb-0 text-gray-800' }, 'Dashboard'),
                             React.createElement(
                                 'a',
-                                { href: '#', className: 'd-none d-sm-inline-block btn btn-sm btn-primary shadow-sm' },
-                                React.createElement('i', { className: 'fas fa-download fa-sm text-white-50' }),
+                                {
+                                    href: '#',
+                                    className: 'd-none d-sm-inline-block btn btn-sm btn-primary shadow-sm',
+                                },
+                                React.createElement('i', {
+                                    className: 'fas fa-download fa-sm text-white-50',
+                                }),
                                 ' Generate Report',
                             ),
                         ),
@@ -670,16 +831,22 @@ function App(props) {
                                 { className: 'col-xl-3 col-md-6 mb-4' },
                                 React.createElement(
                                     'div',
-                                    { className: 'card border-left-primary shadow h-100 py-2' },
+                                    {
+                                        className: 'card border-left-primary shadow h-100 py-2',
+                                    },
                                     React.createElement(
                                         'div',
                                         { className: 'card-body' },
                                         React.createElement(
                                             'div',
-                                            { className: 'row no-gutters align-items-center' },
+                                            {
+                                                className: 'row no-gutters align-items-center',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'col mr-2' },
+                                                {
+                                                    className: 'col mr-2',
+                                                },
                                                 React.createElement(
                                                     'div',
                                                     {
@@ -690,13 +857,17 @@ function App(props) {
                                                 ),
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'h5 mb-0 font-weight-bold text-gray-800' },
+                                                    {
+                                                        className: 'h5 mb-0 font-weight-bold text-gray-800',
+                                                    },
                                                     '$40,000',
                                                 ),
                                             ),
                                             React.createElement(
                                                 'div',
-                                                { className: 'col-auto' },
+                                                {
+                                                    className: 'col-auto',
+                                                },
                                                 React.createElement('i', {
                                                     className: 'fas fa-calendar fa-2x text-gray-300',
                                                 }),
@@ -710,16 +881,22 @@ function App(props) {
                                 { className: 'col-xl-3 col-md-6 mb-4' },
                                 React.createElement(
                                     'div',
-                                    { className: 'card border-left-success shadow h-100 py-2' },
+                                    {
+                                        className: 'card border-left-success shadow h-100 py-2',
+                                    },
                                     React.createElement(
                                         'div',
                                         { className: 'card-body' },
                                         React.createElement(
                                             'div',
-                                            { className: 'row no-gutters align-items-center' },
+                                            {
+                                                className: 'row no-gutters align-items-center',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'col mr-2' },
+                                                {
+                                                    className: 'col mr-2',
+                                                },
                                                 React.createElement(
                                                     'div',
                                                     {
@@ -730,13 +907,17 @@ function App(props) {
                                                 ),
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'h5 mb-0 font-weight-bold text-gray-800' },
+                                                    {
+                                                        className: 'h5 mb-0 font-weight-bold text-gray-800',
+                                                    },
                                                     '$215,000',
                                                 ),
                                             ),
                                             React.createElement(
                                                 'div',
-                                                { className: 'col-auto' },
+                                                {
+                                                    className: 'col-auto',
+                                                },
                                                 React.createElement('i', {
                                                     className: 'fas fa-dollar-sign fa-2x text-gray-300',
                                                 }),
@@ -750,16 +931,22 @@ function App(props) {
                                 { className: 'col-xl-3 col-md-6 mb-4' },
                                 React.createElement(
                                     'div',
-                                    { className: 'card border-left-info shadow h-100 py-2' },
+                                    {
+                                        className: 'card border-left-info shadow h-100 py-2',
+                                    },
                                     React.createElement(
                                         'div',
                                         { className: 'card-body' },
                                         React.createElement(
                                             'div',
-                                            { className: 'row no-gutters align-items-center' },
+                                            {
+                                                className: 'row no-gutters align-items-center',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'col mr-2' },
+                                                {
+                                                    className: 'col mr-2',
+                                                },
                                                 React.createElement(
                                                     'div',
                                                     {
@@ -770,10 +957,14 @@ function App(props) {
                                                 ),
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'row no-gutters align-items-center' },
+                                                    {
+                                                        className: 'row no-gutters align-items-center',
+                                                    },
                                                     React.createElement(
                                                         'div',
-                                                        { className: 'col-auto' },
+                                                        {
+                                                            className: 'col-auto',
+                                                        },
                                                         React.createElement(
                                                             'div',
                                                             {
@@ -785,14 +976,20 @@ function App(props) {
                                                     ),
                                                     React.createElement(
                                                         'div',
-                                                        { className: 'col' },
+                                                        {
+                                                            className: 'col',
+                                                        },
                                                         React.createElement(
                                                             'div',
-                                                            { className: 'progress progress-sm mr-2' },
+                                                            {
+                                                                className: 'progress progress-sm mr-2',
+                                                            },
                                                             React.createElement('div', {
                                                                 className: 'progress-bar bg-info',
                                                                 role: 'progressbar',
-                                                                style: { width: '50%' },
+                                                                style: {
+                                                                    width: '50%',
+                                                                },
                                                             }),
                                                         ),
                                                     ),
@@ -800,7 +997,9 @@ function App(props) {
                                             ),
                                             React.createElement(
                                                 'div',
-                                                { className: 'col-auto' },
+                                                {
+                                                    className: 'col-auto',
+                                                },
                                                 React.createElement('i', {
                                                     className: 'fas fa-clipboard-list fa-2x text-gray-300',
                                                 }),
@@ -814,16 +1013,22 @@ function App(props) {
                                 { className: 'col-xl-3 col-md-6 mb-4' },
                                 React.createElement(
                                     'div',
-                                    { className: 'card border-left-warning shadow h-100 py-2' },
+                                    {
+                                        className: 'card border-left-warning shadow h-100 py-2',
+                                    },
                                     React.createElement(
                                         'div',
                                         { className: 'card-body' },
                                         React.createElement(
                                             'div',
-                                            { className: 'row no-gutters align-items-center' },
+                                            {
+                                                className: 'row no-gutters align-items-center',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'col mr-2' },
+                                                {
+                                                    className: 'col mr-2',
+                                                },
                                                 React.createElement(
                                                     'div',
                                                     {
@@ -834,13 +1039,17 @@ function App(props) {
                                                 ),
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'h5 mb-0 font-weight-bold text-gray-800' },
+                                                    {
+                                                        className: 'h5 mb-0 font-weight-bold text-gray-800',
+                                                    },
                                                     '18',
                                                 ),
                                             ),
                                             React.createElement(
                                                 'div',
-                                                { className: 'col-auto' },
+                                                {
+                                                    className: 'col-auto',
+                                                },
                                                 React.createElement('i', {
                                                     className: 'fas fa-comments fa-2x text-gray-300',
                                                 }),
@@ -867,12 +1076,16 @@ function App(props) {
                                         },
                                         React.createElement(
                                             'h6',
-                                            { className: 'm-0 font-weight-bold text-primary' },
+                                            {
+                                                className: 'm-0 font-weight-bold text-primary',
+                                            },
                                             'Earnings Overview',
                                         ),
                                         React.createElement(
                                             'div',
-                                            { className: 'dropdown no-arrow' },
+                                            {
+                                                className: 'dropdown no-arrow',
+                                            },
                                             React.createElement(
                                                 'a',
                                                 {
@@ -897,23 +1110,36 @@ function App(props) {
                                                 },
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'dropdown-header' },
+                                                    {
+                                                        className: 'dropdown-header',
+                                                    },
                                                     'Dropdown Header:',
                                                 ),
                                                 React.createElement(
                                                     'a',
-                                                    { className: 'dropdown-item', href: '#' },
+                                                    {
+                                                        className: 'dropdown-item',
+                                                        href: '#',
+                                                    },
                                                     'Action',
                                                 ),
                                                 React.createElement(
                                                     'a',
-                                                    { className: 'dropdown-item', href: '#' },
+                                                    {
+                                                        className: 'dropdown-item',
+                                                        href: '#',
+                                                    },
                                                     'Another action',
                                                 ),
-                                                React.createElement('div', { className: 'dropdown-divider' }),
+                                                React.createElement('div', {
+                                                    className: 'dropdown-divider',
+                                                }),
                                                 React.createElement(
                                                     'a',
-                                                    { className: 'dropdown-item', href: '#' },
+                                                    {
+                                                        className: 'dropdown-item',
+                                                        href: '#',
+                                                    },
                                                     'Something else here',
                                                 ),
                                             ),
@@ -925,7 +1151,9 @@ function App(props) {
                                         React.createElement(
                                             'div',
                                             { className: 'chart-area' },
-                                            React.createElement('canvas', { ref: chartRef_Area }),
+                                            React.createElement('canvas', {
+                                                ref: chartRef_Area,
+                                            }),
                                         ),
                                     ),
                                 ),
@@ -944,12 +1172,16 @@ function App(props) {
                                         },
                                         React.createElement(
                                             'h6',
-                                            { className: 'm-0 font-weight-bold text-primary' },
+                                            {
+                                                className: 'm-0 font-weight-bold text-primary',
+                                            },
                                             'Revenue Sources',
                                         ),
                                         React.createElement(
                                             'div',
-                                            { className: 'dropdown no-arrow' },
+                                            {
+                                                className: 'dropdown no-arrow',
+                                            },
                                             React.createElement(
                                                 'a',
                                                 {
@@ -974,23 +1206,36 @@ function App(props) {
                                                 },
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'dropdown-header' },
+                                                    {
+                                                        className: 'dropdown-header',
+                                                    },
                                                     'Dropdown Header:',
                                                 ),
                                                 React.createElement(
                                                     'a',
-                                                    { className: 'dropdown-item', href: '#' },
+                                                    {
+                                                        className: 'dropdown-item',
+                                                        href: '#',
+                                                    },
                                                     'Action',
                                                 ),
                                                 React.createElement(
                                                     'a',
-                                                    { className: 'dropdown-item', href: '#' },
+                                                    {
+                                                        className: 'dropdown-item',
+                                                        href: '#',
+                                                    },
                                                     'Another action',
                                                 ),
-                                                React.createElement('div', { className: 'dropdown-divider' }),
+                                                React.createElement('div', {
+                                                    className: 'dropdown-divider',
+                                                }),
                                                 React.createElement(
                                                     'a',
-                                                    { className: 'dropdown-item', href: '#' },
+                                                    {
+                                                        className: 'dropdown-item',
+                                                        href: '#',
+                                                    },
                                                     'Something else here',
                                                 ),
                                             ),
@@ -1001,28 +1246,41 @@ function App(props) {
                                         { className: 'card-body' },
                                         React.createElement(
                                             'div',
-                                            { className: 'chart-pie pt-4 pb-2' },
-                                            React.createElement('canvas', { id: 'myPieChart', ref: chartRef_Pie }),
+                                            {
+                                                className: 'chart-pie pt-4 pb-2',
+                                            },
+                                            React.createElement('canvas', {
+                                                id: 'myPieChart',
+                                                ref: chartRef_Pie,
+                                            }),
                                         ),
                                         React.createElement(
                                             'div',
-                                            { className: 'mt-4 text-center small' },
+                                            {
+                                                className: 'mt-4 text-center small',
+                                            },
                                             React.createElement(
                                                 'span',
                                                 { className: 'mr-2' },
-                                                React.createElement('i', { className: 'fas fa-circle text-primary' }),
+                                                React.createElement('i', {
+                                                    className: 'fas fa-circle text-primary',
+                                                }),
                                                 ' Direct',
                                             ),
                                             React.createElement(
                                                 'span',
                                                 { className: 'mr-2' },
-                                                React.createElement('i', { className: 'fas fa-circle text-success' }),
+                                                React.createElement('i', {
+                                                    className: 'fas fa-circle text-success',
+                                                }),
                                                 ' Social',
                                             ),
                                             React.createElement(
                                                 'span',
                                                 { className: 'mr-2' },
-                                                React.createElement('i', { className: 'fas fa-circle text-info' }),
+                                                React.createElement('i', {
+                                                    className: 'fas fa-circle text-info',
+                                                }),
                                                 ' Referral',
                                             ),
                                         ),
@@ -1044,7 +1302,9 @@ function App(props) {
                                         { className: 'card-header py-3' },
                                         React.createElement(
                                             'h6',
-                                            { className: 'm-0 font-weight-bold text-primary' },
+                                            {
+                                                className: 'm-0 font-weight-bold text-primary',
+                                            },
                                             'Projects',
                                         ),
                                     ),
@@ -1053,9 +1313,17 @@ function App(props) {
                                         { className: 'card-body' },
                                         React.createElement(
                                             'h4',
-                                            { className: 'small font-weight-bold' },
+                                            {
+                                                className: 'small font-weight-bold',
+                                            },
                                             'Server Migration ',
-                                            React.createElement('span', { className: 'float-right' }, '20%'),
+                                            React.createElement(
+                                                'span',
+                                                {
+                                                    className: 'float-right',
+                                                },
+                                                '20%',
+                                            ),
                                         ),
                                         React.createElement(
                                             'div',
@@ -1068,9 +1336,17 @@ function App(props) {
                                         ),
                                         React.createElement(
                                             'h4',
-                                            { className: 'small font-weight-bold' },
+                                            {
+                                                className: 'small font-weight-bold',
+                                            },
                                             'Sales Tracking ',
-                                            React.createElement('span', { className: 'float-right' }, '40%'),
+                                            React.createElement(
+                                                'span',
+                                                {
+                                                    className: 'float-right',
+                                                },
+                                                '40%',
+                                            ),
                                         ),
                                         React.createElement(
                                             'div',
@@ -1085,9 +1361,17 @@ function App(props) {
                                         ),
                                         React.createElement(
                                             'h4',
-                                            { className: 'small font-weight-bold' },
+                                            {
+                                                className: 'small font-weight-bold',
+                                            },
                                             'Customer Database ',
-                                            React.createElement('span', { className: 'float-right' }, '60%'),
+                                            React.createElement(
+                                                'span',
+                                                {
+                                                    className: 'float-right',
+                                                },
+                                                '60%',
+                                            ),
                                         ),
                                         React.createElement(
                                             'div',
@@ -1102,9 +1386,17 @@ function App(props) {
                                         ),
                                         React.createElement(
                                             'h4',
-                                            { className: 'small font-weight-bold' },
+                                            {
+                                                className: 'small font-weight-bold',
+                                            },
                                             'Payout Details ',
-                                            React.createElement('span', { className: 'float-right' }, '80%'),
+                                            React.createElement(
+                                                'span',
+                                                {
+                                                    className: 'float-right',
+                                                },
+                                                '80%',
+                                            ),
                                         ),
                                         React.createElement(
                                             'div',
@@ -1119,9 +1411,17 @@ function App(props) {
                                         ),
                                         React.createElement(
                                             'h4',
-                                            { className: 'small font-weight-bold' },
+                                            {
+                                                className: 'small font-weight-bold',
+                                            },
                                             'Account Setup ',
-                                            React.createElement('span', { className: 'float-right' }, 'Complete!'),
+                                            React.createElement(
+                                                'span',
+                                                {
+                                                    className: 'float-right',
+                                                },
+                                                'Complete!',
+                                            ),
                                         ),
                                         React.createElement(
                                             'div',
@@ -1129,7 +1429,9 @@ function App(props) {
                                             React.createElement('div', {
                                                 className: 'progress-bar bg-success',
                                                 role: 'progressbar',
-                                                style: { width: '100%' },
+                                                style: {
+                                                    width: '100%',
+                                                },
                                             }),
                                         ),
                                     ),
@@ -1142,14 +1444,20 @@ function App(props) {
                                         { className: 'col-lg-6 mb-4' },
                                         React.createElement(
                                             'div',
-                                            { className: 'card bg-primary text-white shadow' },
+                                            {
+                                                className: 'card bg-primary text-white shadow',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'card-body' },
+                                                {
+                                                    className: 'card-body',
+                                                },
                                                 'Primary',
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'text-white-50 small' },
+                                                    {
+                                                        className: 'text-white-50 small',
+                                                    },
                                                     '#4e73df',
                                                 ),
                                             ),
@@ -1160,14 +1468,20 @@ function App(props) {
                                         { className: 'col-lg-6 mb-4' },
                                         React.createElement(
                                             'div',
-                                            { className: 'card bg-success text-white shadow' },
+                                            {
+                                                className: 'card bg-success text-white shadow',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'card-body' },
+                                                {
+                                                    className: 'card-body',
+                                                },
                                                 'Success',
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'text-white-50 small' },
+                                                    {
+                                                        className: 'text-white-50 small',
+                                                    },
                                                     '#1cc88a',
                                                 ),
                                             ),
@@ -1178,14 +1492,20 @@ function App(props) {
                                         { className: 'col-lg-6 mb-4' },
                                         React.createElement(
                                             'div',
-                                            { className: 'card bg-info text-white shadow' },
+                                            {
+                                                className: 'card bg-info text-white shadow',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'card-body' },
+                                                {
+                                                    className: 'card-body',
+                                                },
                                                 'Info',
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'text-white-50 small' },
+                                                    {
+                                                        className: 'text-white-50 small',
+                                                    },
                                                     '#36b9cc',
                                                 ),
                                             ),
@@ -1196,14 +1516,20 @@ function App(props) {
                                         { className: 'col-lg-6 mb-4' },
                                         React.createElement(
                                             'div',
-                                            { className: 'card bg-warning text-white shadow' },
+                                            {
+                                                className: 'card bg-warning text-white shadow',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'card-body' },
+                                                {
+                                                    className: 'card-body',
+                                                },
                                                 'Warning',
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'text-white-50 small' },
+                                                    {
+                                                        className: 'text-white-50 small',
+                                                    },
                                                     '#f6c23e',
                                                 ),
                                             ),
@@ -1214,14 +1540,20 @@ function App(props) {
                                         { className: 'col-lg-6 mb-4' },
                                         React.createElement(
                                             'div',
-                                            { className: 'card bg-danger text-white shadow' },
+                                            {
+                                                className: 'card bg-danger text-white shadow',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'card-body' },
+                                                {
+                                                    className: 'card-body',
+                                                },
                                                 'Danger',
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'text-white-50 small' },
+                                                    {
+                                                        className: 'text-white-50 small',
+                                                    },
                                                     '#e74a3b',
                                                 ),
                                             ),
@@ -1232,14 +1564,20 @@ function App(props) {
                                         { className: 'col-lg-6 mb-4' },
                                         React.createElement(
                                             'div',
-                                            { className: 'card bg-secondary text-white shadow' },
+                                            {
+                                                className: 'card bg-secondary text-white shadow',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'card-body' },
+                                                {
+                                                    className: 'card-body',
+                                                },
                                                 'Secondary',
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'text-white-50 small' },
+                                                    {
+                                                        className: 'text-white-50 small',
+                                                    },
                                                     '#858796',
                                                 ),
                                             ),
@@ -1250,14 +1588,20 @@ function App(props) {
                                         { className: 'col-lg-6 mb-4' },
                                         React.createElement(
                                             'div',
-                                            { className: 'card bg-light text-black shadow' },
+                                            {
+                                                className: 'card bg-light text-black shadow',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'card-body' },
+                                                {
+                                                    className: 'card-body',
+                                                },
                                                 'Light',
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'text-black-50 small' },
+                                                    {
+                                                        className: 'text-black-50 small',
+                                                    },
                                                     '#f8f9fc',
                                                 ),
                                             ),
@@ -1268,14 +1612,20 @@ function App(props) {
                                         { className: 'col-lg-6 mb-4' },
                                         React.createElement(
                                             'div',
-                                            { className: 'card bg-dark text-white shadow' },
+                                            {
+                                                className: 'card bg-dark text-white shadow',
+                                            },
                                             React.createElement(
                                                 'div',
-                                                { className: 'card-body' },
+                                                {
+                                                    className: 'card-body',
+                                                },
                                                 'Dark',
                                                 React.createElement(
                                                     'div',
-                                                    { className: 'text-white-50 small' },
+                                                    {
+                                                        className: 'text-white-50 small',
+                                                    },
                                                     '#5a5c69',
                                                 ),
                                             ),
@@ -1294,7 +1644,9 @@ function App(props) {
                                         { className: 'card-header py-3' },
                                         React.createElement(
                                             'h6',
-                                            { className: 'm-0 font-weight-bold text-primary' },
+                                            {
+                                                className: 'm-0 font-weight-bold text-primary',
+                                            },
                                             'Illustrations',
                                         ),
                                     ),
@@ -1306,7 +1658,9 @@ function App(props) {
                                             { className: 'text-center' },
                                             React.createElement('img', {
                                                 className: 'img-fluid px-3 px-sm-4 mt-3 mb-4',
-                                                style: { width: '25rem' },
+                                                style: {
+                                                    width: '25rem',
+                                                },
                                                 src: Images.Undraw_profile_1,
                                                 alt: '...',
                                             }),
@@ -1317,14 +1671,22 @@ function App(props) {
                                             'Add some quality, svg illustrations to your project courtesy of ',
                                             React.createElement(
                                                 'a',
-                                                { target: '_blank', rel: 'nofollow', href: 'https://undraw.co/' },
+                                                {
+                                                    target: '_blank',
+                                                    rel: 'nofollow',
+                                                    href: 'https://undraw.co/',
+                                                },
                                                 'unDraw',
                                             ),
                                             ', a constantly updated collection of beautiful svg images that you can use completely free and without attribution!',
                                         ),
                                         React.createElement(
                                             'a',
-                                            { target: '_blank', rel: 'nofollow', href: 'https://undraw.co/' },
+                                            {
+                                                target: '_blank',
+                                                rel: 'nofollow',
+                                                href: 'https://undraw.co/',
+                                            },
                                             'Browse Illustrations on unDraw \u2192',
                                         ),
                                     ),
@@ -1337,7 +1699,9 @@ function App(props) {
                                         { className: 'card-header py-3' },
                                         React.createElement(
                                             'h6',
-                                            { className: 'm-0 font-weight-bold text-primary' },
+                                            {
+                                                className: 'm-0 font-weight-bold text-primary',
+                                            },
                                             'Development Approach',
                                         ),
                                     ),
@@ -1405,7 +1769,12 @@ function App(props) {
                         ),
                         React.createElement(
                             'button',
-                            { className: 'close', type: 'button', 'data-dismiss': 'modal', 'aria-label': 'Close' },
+                            {
+                                className: 'close',
+                                type: 'button',
+                                'data-dismiss': 'modal',
+                                'aria-label': 'Close',
+                            },
                             React.createElement('span', { 'aria-hidden': 'true' }, '\u00D7'),
                         ),
                     ),
@@ -1419,7 +1788,11 @@ function App(props) {
                         { className: 'modal-footer' },
                         React.createElement(
                             'button',
-                            { className: 'btn btn-secondary', type: 'button', 'data-dismiss': 'modal' },
+                            {
+                                className: 'btn btn-secondary',
+                                type: 'button',
+                                'data-dismiss': 'modal',
+                            },
                             'Cancel',
                         ),
                         React.createElement('a', { className: 'btn btn-primary', href: 'login.html' }, 'Logout'),
