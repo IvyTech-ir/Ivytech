@@ -5,9 +5,7 @@ import SampleItems from './data';
 import StoryDecorator from './../../config/StoryDecorator';
 const meta: Meta<typeof Navbar> = {
     component: Navbar,
-    decorators: [
-      
-      StoryDecorator],
+    decorators: [StoryDecorator],
 };
 
 export default meta;

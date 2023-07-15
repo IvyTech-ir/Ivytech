@@ -1,9 +1,8 @@
 import React from 'react';
 import Images from './assets/images/index';
-import MasterLayout from "../src/views/masterLayout/index";
+import MasterLayout from '../src/views/masterLayout/index';
 import { Counter } from './components';
 import ThemProvider from './views/masterLayout/providers/themeProvider';
-
 
 function App() {
     return (
@@ -18,11 +17,21 @@ function App() {
                         </p>
                         <span>
                             <span>Learn </span>
-                            <a className="App-link" href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+                            <a
+                                className="App-link"
+                                href="https://reactjs.org/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 React
                             </a>
                             <span>, </span>
-                            <a className="App-link" href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">
+                            <a
+                                className="App-link"
+                                href="https://redux.js.org/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 Redux
                             </a>
                             <span>, </span>

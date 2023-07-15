@@ -6,7 +6,11 @@ import App from './App';
 import reportWebVitals from './services/reportWebVitals';
 var container = document.getElementById('root');
 var root = createRoot(container);
-root.render(React.createElement(React.StrictMode, null,
-    React.createElement(Provider, { store: store },
-        React.createElement(App, null))));
+root.render(
+    React.createElement(
+        React.StrictMode,
+        null,
+        React.createElement(Provider, { store: store }, React.createElement(App, null)),
+    ),
+);
 reportWebVitals(console.log);
