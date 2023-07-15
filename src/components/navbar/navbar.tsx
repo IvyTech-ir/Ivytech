@@ -19,8 +19,8 @@ function Logo() {
 function Menu({ items }: NavbarProps) {
     return (
         <>
-            {items?.map(item => {
-                return <NavbarGroup {...item}></NavbarGroup>;
+            {items?.map((item,index) => {
+                return <NavbarGroup {...item} key={index}></NavbarGroup>;
             })}
         </>
     );

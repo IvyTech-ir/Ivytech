@@ -24,6 +24,7 @@
     "eslint-plugin-react-hooks": "^4.4.0",
     "jest": "^27.5.1",
     "jquery": "^3.7.0",
+    "moment": "^2.29.4",
     "popper": "^1.0.1",
     "prettier": "^2.6.2",
     "puppeteer": "^20.7.2",

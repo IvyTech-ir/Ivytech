@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Images from '../../assets/images/index';
-import ChartAreaDemo from '../../assets/js/demo/chart-area-demo';
-import ChartPieDemo from '../../assets/js/demo/chart-pie-demo';
+import { ChartPieDemo, ChartAreaDemo } from '../../assets/js/demo/index';
 import Navbar from '../../components/navbar/navbar';
 import NavbarItems from '../../components/navbar/data';
 
