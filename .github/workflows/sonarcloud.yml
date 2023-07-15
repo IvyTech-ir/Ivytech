@@ -34,7 +34,7 @@ on:
   push:
     branches: [ "main", "master" ] 
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main" ] 
   workflow_dispatch:
 
 permissions:
