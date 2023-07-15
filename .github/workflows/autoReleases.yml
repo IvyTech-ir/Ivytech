@@ -1,2 +1,11 @@
 name: Automatic Releases
 uses: marvinpinto/action-automatic-releases@v1.2.1
+on:
+  push:
+    branches: [  "master" ] 
+  pull_request:
+    branches: [ "master" ] 
+  workflow_dispatch:
+
+permissions:
+  pull-requests: read  
