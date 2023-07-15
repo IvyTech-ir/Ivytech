@@ -1,39 +1,18 @@
-import React from 'react'
+import React from 'react';
 import Navbar from './navbar';
-import ThemeProvider from './../../views/masterLayout/providers/themeProvider';
-import type { Meta, ReactRenderer, StoryObj } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
+import SampleItems from './data';
+import StoryDecorator from './../../config/StoryDecorator';
 const meta: Meta<typeof Navbar> = {
-  component: Navbar,
-  decorators: [
-    (Story) => (
-      <ThemeProvider  >
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
+    component: Navbar,
+    decorators: [
+      
+      StoryDecorator],
 };
 
 export default meta;
-type CounterStory = StoryObj<typeof Navbar>;
-export const Default: CounterStory = {
-  args: {
-    Items:
-      [
-        {
-          Link: "",
-          Caption: "Interface",
-          Items:[
-            {
-              Caption:"Components",
-              Fa:"cog"
-            },
-            {
-              Caption:"Utilities",
-              Fa:"wrench"
-            }
-          ]
-        }
-      ]
-  }
+export const Default: StoryObj<typeof Navbar> = {
+    args: {
+        items: SampleItems,
+    },
 };

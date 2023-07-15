@@ -4,6 +4,7 @@ import ChartAreaDemo from "../../assets/js/demo/chart-area-demo";
 import ChartPieDemo from "../../assets/js/demo/chart-pie-demo";
 import Navbar from '../../components/navbar/navbar';
 import NavbarItems from '../../components/navbar/data';
+import ScriptsProvider from './providers/scriptsProvider';
 
 function App(props: any) {
     const chartRef_Area = useRef();
