@@ -1,9 +1,7 @@
-
 # Shahab's Sample Architecht
 
-
-
 ## Requirements
+
 <ol>
     <li>
         how you would set up a project?
@@ -15,7 +13,9 @@
 <hr/>
 
 ## 1- How I set up a project
-### The main goals of my dream solution
+
+### The main goals of my solution
+
 <ul>
     <li>Easy to Develop
         <ul>
@@ -66,7 +66,7 @@
     <li>Easy to Maintenace
         <ul>
             <li>
-                User Journey Monitoring (Newrelic, Hotjar)
+                User Journey Monitoring (Hotjar)
             </li>
             <li>
                 Unexpected Error Handling (newRelic)
@@ -93,11 +93,14 @@
             </li>
         </ul>
     </li>
-</ul> 
+</ul>
 
 ## 2- How I structure my code?
+
 ### The Main goals of my structure
+
 <ul>
+    <li>Encapsulate Development with Build and API Integration</li>
     <li>
         Easy to understand (Structure Map) <em>helps to assosiate the UI to the Source</em>
     </li>
@@ -116,7 +119,11 @@
 </ul>
 
 ## 3- How a clean solution is look from my perspective?
+
 <ul>
+     <li>
+        Automatic and Manual Cleaning <br><em> not only by automatic analyzev (e.g Sonar Cloud) but also aligning with structre map (which we create it internally) based on project concepts</em>
+    </li>
     <li>
         No Extra Components, Configuration, Function,Element, Line, Letter
         <br><em>how beutiful is the explorer view</em>
@@ -127,13 +134,13 @@
     <li>
         Easy to find reusable components to use or wrap it
     </li>
-    <li>
-        Automatic and Manual Cleaning <br><em> not only by automatic analyzev (e.g Sonar Cloud) but also aligning with structre map (which we create it internally) based on project concepts</em>
-    </li>
+  
 </ul>
 
 ## 4- which design pattern you’d choose?
+
 ### base on the situation I will use mix of below design patterns
+
 <ul>
     <li>
         React-Hook <em>Customised Hooks helps alot to reusablity and readability </em>
@@ -153,31 +160,28 @@
 </ul>
 <hr>
 
-# Structure 
+# Tools List
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
-
-## Performanc: Web-vitals
-## User Tracking: Web-trekker
-## Error Monitoring: NewRelic
-## State Management: Redux
-## Integrity: plugin something
-## Clean Code: prettier, Sonar Cloud, Chromatic
-## Modularity: Encapsulated Repository for Components, Whitebox-DesignSystem, Storybook
-## MultiBorower Support
-## Performanc: React-snapshots
-## Test, Jest, E2E (Pupetter),React testing library, Scenario Base
-## React Context Provider
-## React Theme Provider
-## React Trekk Provider
+## NewRelic
+Error Monitoring, web vitals
+#### State Management: Redux
+#### Clean Code: prettier, Sonar Cloud, Chromatic
+## Pupeteer
+MultiBorower Support, E2E
+## Jest
+Unit Test, Snapshot test, code coverage, Scenario Base 
 ## Webpack
-## npmrc
-## env management
-## CODE COVERAGE
-## Post CSS
-## Code Splitting (Webpack) https://webpack.js.org/guides/code-splitting/
+minify output
+## Web-trekker
+User Tracking
+# Patterns
+## React-Context
+Theme Provider, Auth Providers, ...
 ## Wrapup Export Pattern
-## config index.html
-## Authoriztion Mechanism
-## Storybook Samples
-## what else with redux?
+
+# Other to consider
+## env management
+## Post CSS 
 ## Security Configuration
+
+
