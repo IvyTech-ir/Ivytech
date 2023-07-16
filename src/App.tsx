@@ -2,11 +2,10 @@ import React from 'react';
 import Images from './assets/images/index';
 import MasterLayout from '../src/views/masterLayout/index';
 import { Counter } from './components';
-import ThemProvider from './views/masterLayout/providers/themeProvider';
-
+import MainContext from './context/index';
 function App() {
     return (
-        <ThemProvider>
+        <MainContext>
             <MasterLayout>
                 <div className="App">
                     <header className="App-header">
@@ -56,7 +55,7 @@ function App() {
                     </header>
                 </div>
             </MasterLayout>
-        </ThemProvider>
+        </MainContext>
     );
 }
 
