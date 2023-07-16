@@ -1,8 +1,8 @@
 import React from 'react';
 import Images from './assets/images/index';
-import MasterLayout from '../src/views/masterLayout/index';
+import MasterLayout from './views/masterLayout/masterLayout';
 import { Counter } from './components';
-import MainContext from './context/index';
+import MainContext from './context/context';
 function App() {
     return (
         <MainContext>

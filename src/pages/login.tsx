@@ -1,6 +1,17 @@
 import React from 'react';
 import EmptyLayout from './../views/masterLayout/emptyLayout';
-export default function () {
+import { useNavigate } from 'react-router-dom';
+import { user } from '../context/context';
+import { setCurrentUser } from '../utils/helpers/localStorage';
+export default function (props: any) {
+    const [user, setUser] = React.useState<user>(null);
+    const navigate = useNavigate();
+    function login() {
+        const temp={ fullname: 'login Name' };
+        setUser(temp);
+        setCurrentUser(temp);
+        navigate('/');
+    }
     return (
         <EmptyLayout>
             <div className="container">
@@ -43,7 +54,7 @@ export default function () {
                                                         <label className="custom-control-label">Remember Me</label>
                                                     </div>
                                                 </div>
-                                                <a href="index.html" className="btn btn-primary btn-user btn-block">
+                                                <a onClick={login} className="btn btn-primary btn-user btn-block">
                                                     Login
                                                 </a>
                                                 <hr />

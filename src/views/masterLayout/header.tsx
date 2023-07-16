@@ -1,10 +1,17 @@
 import React, { useMemo } from 'react';
 import Images from '../../assets/images/index';
-import { AuthContext } from '../../context/index';
+import { AuthContext } from '../../context/context';
+import { setCurrentUser } from '../../utils/helpers/localStorage';
+import { useNavigate } from 'react-router-dom';
 function Header() {
     //samples: React-useContext
     console.log('aaaa Render Header');
     const auth = React.useContext(AuthContext);
+    const navigate = useNavigate();
+    const logout = () => {
+        setCurrentUser(null);
+        navigate('/login');
+    };
     return (
         <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
             <button id="sidebarToggleTop" className="btn btn-link d-md-none rounded-circle mr-3">
@@ -230,7 +237,7 @@ function Header() {
                             Activity Log
                         </a>
                         <div className="dropdown-divider"></div>
-                        <a className="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                        <a className="dropdown-item" onClick={logout} data-toggle="modal" data-target="#logoutModal">
                             <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Logout
                         </a>
