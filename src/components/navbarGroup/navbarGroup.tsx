@@ -36,7 +36,7 @@ export default function NavbarGroup({ items, caption, type, ...rest }: NavbarGro
                 {items?.map((item, index) => {
                     const id = `collapse_${index}`;
                     return (
-                        <li className="nav-item">
+                        <li className="nav-item" key={index}>
                             <a
                                 className="nav-link collapsed"
                                 href="#"
@@ -57,9 +57,9 @@ export default function NavbarGroup({ items, caption, type, ...rest }: NavbarGro
                                 >
                                     <div className="bg-white py-2 collapse-inner rounded">
                                         <h6 className="collapse-header">{item.innreCaption}</h6>
-                                        {item.items.map(innerItem => {
+                                        {item.items.map((innerItem,index) => {
                                             return (
-                                                <a className="collapse-item" href="buttons.html">
+                                                <a key={index} className="collapse-item" href="buttons.html">
                                                     {innerItem.caption}
                                                 </a>
                                             );
