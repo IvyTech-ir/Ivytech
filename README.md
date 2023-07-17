@@ -109,7 +109,6 @@ Tools:Tailswind, StyledComponents, Sonar Cloud, Chromatic, Prettier
      <li>
         Development Experience (DX) (e.g. Easy to find reusable components, meaningful explore view)
     </li>
-    
     <li>
         No Extra Components, Configuration, Function, Element, Line, Letter
         <br><em>how beautiful is the explorer view</em>
@@ -123,10 +122,6 @@ Tools:Tailswind, StyledComponents, Sonar Cloud, Chromatic, Prettier
      <li>
     less Pure HTML (Styled Components), optimized CSS output (Webpack), Prettier Code,  reusable design system, Uglified CSS output (Tailswind),
     </li>
-    
-   
-     
-   
 </ul>
 
 ## 4- which design pattern you’d choose?
