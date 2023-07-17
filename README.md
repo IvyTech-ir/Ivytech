@@ -4,7 +4,7 @@
 
 <ol>
     <li>
-        how you would set up a project?
+        how would you set up a project?
     </li>
     <li>how you structure your code?</li>
     <li>how a clean solution would look from your perspective?</li>
@@ -22,7 +22,7 @@ The main goals of my solution
     <li>Easy to Develop
         <ul>
             <li>
-                Bases on The official Redux+TS template for <a href="https://github.com/facebook/create-react-app" >Create React App </a> <em> so every newbie can onboard easy and fast</em>
+                Based on The official Redux+TS template for <a href="https://github.com/facebook/create-react-app" >Create React App </a> <em> so every newbie can onboard easy and fast</em>
             </li>
             <li>
                 Standard Design Patterns (Tailswind)
@@ -37,10 +37,10 @@ The main goals of my solution
             </li>
         </ul>
     </li>
-    <li>Easy to Automatic test
+    <li>Easy to Automatically test
         <ul>
             <li>
-                Unit tests,E2E Test, snapshot test, Scenario base Tests, Multi Browser Test, Code Coverage Control (Jest, pupeeter)
+                Unit tests, E2E Tests, snapshot tests, Scenario base Tests, Multi-Browser Test, Code Coverage Control (Jest, puppeteer)
             </li>
         </ul>
     </li>
@@ -54,29 +54,29 @@ The main goals of my solution
             </li>
         </ul>
     </li>
-    <li>Best Possible Performanc
+    <li>Best Possible Performance
         <ul>
             <li>
-                Consider high scale React problems, e.g rendering componets (Latest React Design Patterns, e.g Hooks)
+                Consider large-scale React problems, e.g rendering components (Latest React Design Patterns, e.g Hooks)
             </li>
             <li>
             Web vitals monitoring (newRelic)
             </li>
             <li>
-                Optimised Output (Webpack)
+                Optimized Output (Webpack)
             </li>
             <li>
-                SEO Awarness (e.g Next.js)
+                SEO awareness (e.g Next.js)
             </li>
         </ul>
     </li>
     <li>UX 
         <ul>
             <li>
-                Track user behaviour (Hotjar)
+                Track user behavior (Hotjar)
             </li>
             <li>
-            UnExpected Error Hadling (newRelic)
+            Unexpected Error Handling (newRelic)
             </li>
             <li>
                 United Design System (Figma)
@@ -85,49 +85,53 @@ The main goals of my solution
     </li>
 </ul>
 
-## 2- How I structure my code?
+## 2- How do I structure my code?
 
 <ul>
     <li>
-    Encapsulate main parts (Development, Build, Integration, Thirdparties)</li>
+    Encapsulate main parts (Development, Build, Integration, Third parties)</li>
     <li>
-        Semantic Structure Map <em>helps to assosiate the UI to the Source</em>
+        Semantic Structure Map <em>helps to associate the UI to the Source</em>
     </li>
     <li>
-        Integrity  <em>make everything in one place to easy access </em>
+        Integrity  <em> makes everything in one place easy to access </em>
     </li>
 </ul>
 
-## 3- How a clean solution is look from my perspective?
+## 3- How a clean solution looks from my perspective?
 
 Tools:Tailswind, StyledComponents, Sonar Cloud, Chromatic, Prettier
 
 <ul>
      <li>
-        Automatic and Manual Cleaning <br><em> not only by automatic analyzes (e.g Sonar Cloud, Prettier) but also aligning with semantice structre map (which we create it internally) based on project concepts</em>
+        Automatic and Manual Cleaning <br><em> not only by automatic analyzes (e.g Sonar Cloud, Prettier) but also aligning with semantic structure map (which we create internally) based on project concepts</em>
     </li>
      <li>
-    Prettier Code, Uglified output, reusable design system, optimised CSS output
+        Development Experience (DX) (e.g. Easy to find reusable components, meaningful explore view)
+    </li>
+    
+    <li>
+        No Extra Components, Configuration, Function, Element, Line, Letter
+        <br><em>how beautiful is the explorer view</em>
+    </li>
+    <li>
+        Unit Format in all places <br><em> Hyrerchy, File Names, File Path, function names, class names, variable names</em>
     </li>
      <li>
         UX/UI final checking using chromatic
     </li>
-    <li>
-        Development Experience (DX) (e.g. Easy to find reusable components)
-    </li>
-    <li>
-        No Extra Components, Configuration, Function,Element, Line, Letter
-        <br><em>how beutiful is the explorer view</em>
-    </li>
      <li>
-        Unit Format in all places <br><em> Hyrerchy, File Names, File Path, function names, class names, variable names</em>
+    less Pure HTML (Styled Components), optimized CSS output (Webpack), Prettier Code,  reusable design system, Uglified CSS output (Tailswind),
     </li>
+    
+   
+     
    
 </ul>
 
 ## 4- which design pattern you’d choose?
 
-base on the situation I will use mix of below design patterns
+Based on the situation I will use a mix of the below design patterns
 
 <ul>
     <li>
@@ -140,7 +144,7 @@ base on the situation I will use mix of below design patterns
         Provider Pattern: <em>Managing Theme, Translation, Authentication</em>
     </li>
     <li>
-        NexJS Pattern: <em>if the project needs server side rendering, e.g SEO dependent project</em>
+        NexJS Pattern: <em>if the project needs server-side rendering, e.g SEO dependent project</em>
     </li>
 </ul>
 <hr>
@@ -149,7 +153,7 @@ base on the situation I will use mix of below design patterns
 
 <ul>
 <li>
-Advanced Webpack configuration like routbase distribution
+Advanced Webpack configuration like rout base distribution
 
 </li>
 <li>
